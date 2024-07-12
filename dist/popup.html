@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SEO Cannibalization Detector</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main" id="main">
+        <div class="logo-title">
+            <img src="./assets/cannibalization-icon.png" alt="" width="40" height="40" class="logo">
+            <h1 class="title">SEO Cannibalization Detector</h1>
+        </div>
+        <div id="file-selection">
+            <p id="infoText">Please upload your Google Search Console (GSC) query data to analyze cannibalization between your queries.</p>
+            <div class="file-input-wrapper">
+                <label for="fileInput" class="file-label">Choose File</label>
+                <input type="file" id="fileInput" accept=".csv" style="display: none;">
+                <span id="file-name">No file uploaded</span>
+            </div>
+            <button id="processButton">Analyze Cannibalization</button>
+            <p>Tool works with CSV Only.</p>
+        </div>
+        <div id="spinner"></div>
+        <div id="result"></div>
+        <div id="footer">
+            Made by <a href="https://www.linkedin.com/in/oskaygunacar/" target="_blank">Oskay Gunacar</a>
+            <div class="techseohub">
+                Too check other SEO tools you can visit <a href="https://techseohub.com" target="_blank">TechSEOHub</a>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+    <script src="papa.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+* {
+    font-family: "Nunito", sans-serif !important;
+}
+
+body {
+    margin: 0;
+    max-width: 100%;
+}
+
+#main {
+    text-align: center;
+    width: 400px;
+    background-color: #f0f4f9;
+    padding: 25px;
+}
+
+h1 {
+    color: #444;
+    font-size: 20px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+#file-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 30px 15px 15px 15px;
+    border-radius: 8px;
+}
+
+.file-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.file-label {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 600px;
+    font-size:15px
+}
+
+.file-label:hover {
+    background-color: #45a049;
+}
+
+#processButton {
+    background-color: #3d3e3d;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size:15px;
+    border:none;
+    margin-top:8px;
+}
+
+#processButton:hover {
+    background-color: rgb(23, 22, 22);
+    color:white;
+}
+
+#file-name {
+    font-size: 14px;
+    color: #666;
+}
+
+#infoText {
+    font-weight: 600;
+    color: #666;
+    line-height: 27.5px;
+    font-size: 15px;
+}
+
+#footer {
+    padding: 10px;
+    color: #5f6368;
+    font-size: 12px;
+    margin-top: 5px;
+    border-top: #fff;
+}
+
+#footer .techseohub {
+    margin-top:10px;
+    font-weight: 600px;
+}
+
+
+/* Result */
+
+#result {
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 30px 15px 15px 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.resultTitle{
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Spinner */
+#spinner {
+    display: none;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
